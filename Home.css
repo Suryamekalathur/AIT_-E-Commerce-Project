@@ -1,0 +1,449 @@
+* {
+    box-sizing: border-box;
+    overflow-x: clip;
+}
+
+header {
+    display: flex;
+    padding: 15px 100px;
+    justify-content: space-between;
+    box-shadow: 0px 4px 7px rgba(128, 128, 128, 0.534);
+    align-items: center;
+    background-color: white;
+    flex-wrap: wrap;
+}
+
+header img {
+    max-width: 150px;
+    height: auto;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    white-space: nowrap;
+}
+
+header nav ul li a:hover {
+    color: red;
+}
+
+header nav i {
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+header nav i:hover {
+    color: blueviolet;
+}
+
+cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    text-align: center;
+    margin: 400px 50px 50px;
+}
+
+.car, .pay, .shield, .headphones {
+    background-color: bisque;
+    padding: 50px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.car i, .pay i, .shield i, .headphones i {
+    padding: 15px;
+    border-radius: 50%;
+    background-color: rgba(240, 255, 255, 0.653);
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.car h2, .pay h2, .shield h2, .headphones h2 {
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.car p, .pay p, .shield p, .headphones p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.car { background-color: bisque; }
+.pay { background-color: lightblue; }
+.shield { background-color: lightgreen; }
+.headphones { background-color: lavender; }
+
+.big {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.container-1, .container-2, .container-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin: 0 50px;
+    padding-bottom: 30px;
+}
+
+.sofa-1, .phone-1, .Armsofa-1 {
+    border: 1px solid #eee;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: left;
+    position: relative;
+}
+
+.sofa-1 img, .phone-1 img, .Armsofa-1 img, .Armsofa-2 img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.double {
+    margin-top: 0;
+}
+
+.sofa-1 h3, .phone-1 h3, .Armsofa-1 h3 {
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+.sofa-1 p, .phone-1 p, .Armsofa-1 p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+}
+
+span {
+    color: gold;
+    margin-right: 5px;
+    font-size: 0.9rem;
+}
+
+.plus, .plus-1 {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.plus:hover, .plus-1:hover {
+    color: white;
+    background-color: blue;
+}
+
+.phone-2, .Armsofa-2 {
+    border: 1px solid #eee;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: left;
+    position: relative;
+    height: auto;
+    width: auto;
+    margin: 0;
+}
+
+.New {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.best {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+footer {
+    display: flex;
+    background-color: rgb(18, 51, 108);
+    color: white;
+    padding: 40px 50px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.mart {
+    flex: 1;
+    min-width: 250px;
+    margin-right: 30px;
+}
+
+.mart h2 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.mart .paragra {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    white-space: pre-wrap;
+}
+
+.titles {
+    display: flex;
+    flex: 2;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.titles > div {
+    min-width: 180px;
+    margin-bottom: 20px;
+}
+
+.sub-titles {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.sub-titles::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 50px;
+    height: 2px;
+    background-color: white;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li, footer ul p {
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.Contact p {
+    white-space: normal;
+}
+
+@media (max-width: 1024px) {
+    header {
+        padding: 10px 50px;
+    }
+
+    nav ul {
+        gap: 20px;
+    }
+
+    cards {
+        margin-top: 100px;
+        margin-inline: 20px;
+        gap: 15px;
+    }
+
+    .car, .pay, .shield, .headphones {
+        padding: 40px 15px;
+    }
+
+    .container-1, .container-2, .container-3 {
+        margin: 0 20px;
+        gap: 20px;
+    }
+
+    footer {
+        padding: 30px 20px;
+        justify-content: space-between;
+    }
+
+    .mart {
+        margin-right: 20px;
+        margin-bottom: 30px;
+    }
+
+    .titles > div {
+        min-width: 150px;
+        margin-right: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+
+    header img {
+        margin-bottom: 15px;
+    }
+
+    nav {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    header nav i {
+        margin: 0 5px;
+    }
+
+    cards {
+        grid-template-columns: 1fr;
+        margin-top: 50px;
+        margin-inline: 15px;
+    }
+
+    .car, .pay, .shield, .headphones {
+        padding: 30px 15px;
+    }
+
+    .container-1, .container-2, .container-3 {
+        grid-template-columns: 1fr;
+        margin: 0 15px;
+        gap: 15px;
+    }
+
+    .sofa-1, .phone-1, .Armsofa-1, .phone-2, .Armsofa-2 {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .sofa-1 h3, .phone-1 h3, .Armsofa-1 h3 {
+        font-size: 1rem;
+    }
+
+    .sofa-1 p, .phone-1 p, .Armsofa-1 p {
+        font-size: 1.1rem;
+    }
+
+    .plus, .plus-1 {
+        position: static;
+        margin-top: 15px;
+        display: inline-block;
+        left: auto;
+        right: auto;
+        bottom: auto;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 15px;
+        text-align: center;
+    }
+
+    .mart {
+        margin-right: 0;
+        margin-bottom: 25px;
+        width: 100%;
+    }
+
+    .titles {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .titles > div {
+        min-width: unset;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .sub-titles::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    footer ul li, footer ul p {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    header nav i {
+        font-size: 1rem;
+    }
+
+    cards {
+        margin-inline: 10px;
+        gap: 10px;
+    }
+
+    .car, .pay, .shield, .headphones {
+        padding: 25px 10px;
+    }
+
+    .car h2, .pay h2, .shield h2, .headphones h2 {
+        font-size: 1.1rem;
+    }
+
+    .car i, .pay i, .shield i, .headphones i {
+        font-size: 1.5rem;
+        padding: 12px;
+    }
+
+    .container-1, .container-2, .container-3 {
+        margin: 0 10px;
+        gap: 10px;
+    }
+
+    .sofa-1 h3, .phone-1 h3, .Armsofa-1 h3 {
+        font-size: 0.95rem;
+    }
+
+    .sofa-1 p, .phone-1 p, .Armsofa-1 p {
+        font-size: 1rem;
+    }
+
+    footer {
+        padding: 15px 10px;
+    }
+
+    .mart h2 {
+        font-size: 1.3rem;
+    }
+
+    .mart .paragra {
+        font-size: 0.8rem;
+    }
+
+    .sub-titles {
+        font-size: 1.1rem;
+    }
+}
