@@ -1,0 +1,205 @@
+header {
+    display: flex;
+    padding-inline-start: 100px;
+    justify-content: space-between;
+    box-shadow: 0px 4px 7px rgba(128, 128, 128, 0.534);
+    align-items: center;
+    background-color: white;
+}
+
+nav ul {
+    display: flex;
+    padding-inline-end: 100px;
+    gap: 30px;
+    list-style: none;
+    text-decoration: none;
+    padding-top: 10px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Cart Starts here */
+.container {
+    display: grid;
+    text-align: center;
+    height: 100px;
+    padding: 40px 40px 40px 40px;
+    padding-bottom: 70px;
+}
+
+.sofa-1,
+.sofa-2,
+.sofa-3 {
+    display: flex;
+    flex: 1;
+    border: 1px solid red
+}
+
+.container1 img {
+    width: 150px;
+
+}
+
+.close {
+    position: absolute;
+    top: 199px;
+    left: 835px;
+}
+
+.add {
+    position: absolute;
+    top: 292px;
+    left: 776px;
+}
+
+.minus {
+    position: absolute;
+    top: 293px;
+    left: 814px;
+}
+
+.price {
+    position: absolute;
+    top: 284px;
+    left: 278px;
+    color: gray;
+
+}
+
+.num {
+    position: absolute;
+    top: 284px;
+    left: 376px;
+}
+
+.close-2 {
+    position: absolute;
+    top: 338px;
+    left: 835px;
+}
+
+.add-2 {
+    position: absolute;
+    top: 428px;
+    left: 776px;
+}
+
+.minus-2 {
+    position: absolute;
+    top: 429px;
+    left: 814px;
+}
+
+.price-2 {
+    position: absolute;
+    top: 417px;
+    left: 278px;
+    color: gray;
+}
+
+.num-2 {
+    position: absolute;
+    top: 417px;
+    left: 376px;
+}
+
+.close-3 {
+    position: absolute;
+    top: 476px;
+    left: 835px;
+}
+
+.add-3 {
+    position: absolute;
+    top: 579px;
+    left: 776px;
+}
+
+.minus-3 {
+    position: absolute;
+    top: 580px;
+    left: 814px;
+}
+
+.price-3 {
+    position: absolute;
+    top: 580px;
+    left: 278px;
+    color: gray;
+}
+
+.num-3 {
+    position: absolute;
+    top: 581px;
+    left: 376px;
+}
+
+.Summary {
+    position: absolute;
+    top: 190px;
+    left: 919px;
+    border: 1px solid black;
+    width: 176px;
+    text-align: start;
+    padding-left: 10px;
+    height: 123px;
+}
+
+
+.container-1 {
+    margin: 100px 50px;
+    max-inline-size: 800px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+/* footer starts here */
+footer {
+    display: grid;
+    grid-template-columns: 15% 75%;
+    background-color: rgb(18 51 108);
+    padding-left: 10%;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+h2 {
+    color: white;
+}
+
+.titles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-inline-start: 50px;
+    align-items: center;
+    text-align: start;
+    /* margin-bottom: 5px;*/
+}
+
+footer div ul li {
+    list-style: none;
+}
+
+ul li {
+    color: rgb(182, 181, 181)
+}
+
+footer div ul li a {
+    text-decoration: none;
+}
+
+.para {
+    color: rgb(182, 181, 181)
+}
+
+.sub-titles {
+    margin-inline-start: 40px;
+}
+
+.titles .Contact,
+.Contact {
+    margin-top: 25px;
+}
