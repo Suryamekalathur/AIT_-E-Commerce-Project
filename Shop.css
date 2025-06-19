@@ -28,6 +28,10 @@ header nav ul li a {
     color: black;
 }
 
+header nav i:hover {
+    color: blue;
+}
+
 .banner {
     width: 100%;
     height: 191px;
@@ -165,7 +169,7 @@ p {
     position: absolute;
     top: 12px;
     right: 12px;
-    background-color:none;
+    background-color: none;
     padding: 8px;
     border-radius: 50%;
     opacity: 0;
