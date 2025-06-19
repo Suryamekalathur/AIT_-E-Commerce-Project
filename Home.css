@@ -14,7 +14,7 @@ header {
 }
 
 header img {
-    max-width: 280px;
+    max-width: 250px;
     height: auto;
 }
 
@@ -30,7 +30,7 @@ nav ul {
 header nav ul li a {
     text-decoration: none;
     color: black;
-    font-size: 1rem;
+    font-size: 16px;
     white-space: nowrap;
 }
 
@@ -39,13 +39,13 @@ header nav ul li a:hover {
 }
 
 header nav i {
-    font-size: 1.2rem;
+    font-size: 19.2px;
     cursor: pointer;
     margin-left: 10px;
 }
 
 header nav i:hover {
-    color: blueviolet;
+    color: blue;
 }
 
 cards {
@@ -56,35 +56,58 @@ cards {
     margin: 400px 50px 50px;
 }
 
-.car, .pay, .shield, .headphones {
+.car,
+.pay,
+.shield,
+.headphones {
     background-color: bisque;
     padding: 50px 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.car i, .pay i, .shield i, .headphones i {
+.car i,
+.pay i,
+.shield i,
+.headphones i {
     padding: 15px;
     border-radius: 50%;
     background-color: rgba(240, 255, 255, 0.653);
     margin-bottom: 20px;
-    font-size: 1.8rem;
+    font-size: 28.8px;
 }
 
-.car h2, .pay h2, .shield h2, .headphones h2 {
+.car h2,
+.pay h2,
+.shield h2,
+.headphones h2 {
     margin-bottom: 15px;
-    font-size: 1.3rem;
+    font-size: 20.8px;
 }
 
-.car p, .pay p, .shield p, .headphones p {
-    font-size: 0.9rem;
+.car p,
+.pay p,
+.shield p,
+.headphones p {
+    font-size: 14.4px;
     line-height: 1.5;
 }
 
-.car { background-color: bisque; }
-.pay { background-color: lightblue; }
-.shield { background-color: lightgreen; }
-.headphones { background-color: lavender; }
+.car {
+    background-color: bisque;
+}
+
+.pay {
+    background-color: lightblue;
+}
+
+.shield {
+    background-color: lightgreen;
+}
+
+.headphones {
+    background-color: lavender;
+}
 
 .big {
     text-align: center;
@@ -92,7 +115,22 @@ cards {
     margin-bottom: 30px;
 }
 
-.container-1, .container-2, .container-3 {
+.discount-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: darkblue;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.container-1,
+.container-2,
+.container-3 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
@@ -100,7 +138,9 @@ cards {
     padding-bottom: 30px;
 }
 
-.sofa-1, .phone-1, .Armsofa-1 {
+.sofa-1,
+.phone-1,
+.Armsofa-1 {
     border: 1px solid #eee;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
     padding: 15px;
@@ -108,24 +148,67 @@ cards {
     position: relative;
 }
 
-.sofa-1 img, .phone-1 img, .Armsofa-1 img, .Armsofa-2 img {
+.sofa-1 img,
+.phone-1 img,
+.Armsofa-1 img,
+.Armsofa-2 img {
     width: 100%;
     height: auto;
     display: block;
     margin-bottom: 10px;
 }
 
+.sofa-1,
+.phone-1,
+.phone-2,
+.Armsofa-1,
+.Armsofa-2 {
+    position: relative;
+}
+
+
+.like-icon {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background-color: #ffffff;
+    padding: 8px;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 2;
+}
+
+.like-icon i {
+    color: none;
+    font-size: 16px;
+    pointer-events: none;
+}
+
+.sofa-1:hover .like-icon,
+.phone-1:hover .like-icon,
+.phone-2:hover .like-icon,
+.Armsofa-1:hover .like-icon,
+.Armsofa-2:hover .like-icon {
+    opacity: 1;
+}
+
 .double {
     margin-top: 0;
 }
 
-.sofa-1 h3, .phone-1 h3, .Armsofa-1 h3 {
+.sofa-1 h3,
+.phone-1 h3,
+.Armsofa-1 h3 {
     margin: 10px 0;
-    font-size: 1.1rem;
+    font-size: 17.6px;
 }
 
-.sofa-1 p, .phone-1 p, .Armsofa-1 p {
-    font-size: 1.2rem;
+.sofa-1 p,
+.phone-1 p,
+.Armsofa-1 p {
+    font-size: 19.2px;
     font-weight: bold;
     color: #333;
     margin: 10px 0;
@@ -134,10 +217,11 @@ cards {
 span {
     color: gold;
     margin-right: 5px;
-    font-size: 0.9rem;
+    font-size: 14.4px;
 }
 
-.plus, .plus-1 {
+.plus,
+.plus-1 {
     position: absolute;
     bottom: 15px;
     right: 15px;
@@ -145,24 +229,44 @@ span {
     background-color: #f8f8f8;
     border-radius: 50%;
     cursor: pointer;
-    font-size: 1.1rem;
+    font-size: 17.6px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.plus:hover, .plus-1:hover {
-    color: white;
-    background-color: blue;
+.like-icon:hover {
+    color: none;
+    background-color:none;
 }
 
-.phone-2, .Armsofa-2 {
+.plus:hover,
+.plus-1:hover {
+    color: white;
+    background-color: rgb(16, 16, 192);
+}
+
+.phone-2 {
     border: 1px solid #eee;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
     padding: 15px;
     text-align: left;
     position: relative;
+    left: 427px;
     height: auto;
-    width: auto;
+    width: 350px;
     margin: 0;
+}
+
+.Armsofa-2 {
+    border: 1px solid #eee;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: left;
+    position: relative;
+    left: 230px;
+    height: auto;
+    width: 350px;
+    margin: 0;
+
 }
 
 .New {
@@ -194,11 +298,11 @@ footer {
 
 .mart h2 {
     margin-bottom: 15px;
-    font-size: 1.5rem;
+    font-size: 24px;
 }
 
 .mart .paragra {
-    font-size: 0.9rem;
+    font-size: 14.4px;
     line-height: 1.6;
     white-space: pre-wrap;
 }
@@ -210,13 +314,13 @@ footer {
     flex-wrap: wrap;
 }
 
-.titles > div {
+.titles div {
     min-width: 180px;
     margin-bottom: 20px;
 }
 
 .sub-titles {
-    font-size: 1.2rem;
+    font-size: 19.2px;
     margin-bottom: 15px;
     position: relative;
 }
@@ -228,7 +332,8 @@ footer {
     bottom: -5px;
     width: 50px;
     height: 2px;
-    background-color: white;
+    background-color: none;
+    text-decoration: none;
 }
 
 footer ul {
@@ -237,8 +342,9 @@ footer ul {
     margin: 0;
 }
 
-footer ul li, footer ul p {
-    font-size: 0.9rem;
+footer ul li,
+footer ul p {
+    font-size: 14.4px;
     margin-bottom: 8px;
     cursor: pointer;
     transition: color 0.3s ease;
@@ -263,11 +369,16 @@ footer ul li, footer ul p {
         gap: 15px;
     }
 
-    .car, .pay, .shield, .headphones {
+    .car,
+    .pay,
+    .shield,
+    .headphones {
         padding: 40px 15px;
     }
 
-    .container-1, .container-2, .container-3 {
+    .container-1,
+    .container-2,
+    .container-3 {
         margin: 0 20px;
         gap: 20px;
     }
@@ -282,7 +393,7 @@ footer ul li, footer ul p {
         margin-bottom: 30px;
     }
 
-    .titles > div {
+    .titles>div {
         min-width: 150px;
         margin-right: 15px;
     }
@@ -319,30 +430,44 @@ footer ul li, footer ul p {
         margin-inline: 15px;
     }
 
-    .car, .pay, .shield, .headphones {
+    .car,
+    .pay,
+    .shield,
+    .headphones {
         padding: 30px 15px;
     }
 
-    .container-1, .container-2, .container-3 {
+    .container-1,
+    .container-2,
+    .container-3 {
         grid-template-columns: 1fr;
         margin: 0 15px;
         gap: 15px;
     }
 
-    .sofa-1, .phone-1, .Armsofa-1, .phone-2, .Armsofa-2 {
+    .sofa-1,
+    .phone-1,
+    .Armsofa-1,
+    .phone-2,
+    .Armsofa-2 {
         padding: 10px;
         text-align: center;
     }
 
-    .sofa-1 h3, .phone-1 h3, .Armsofa-1 h3 {
-        font-size: 1rem;
+    .sofa-1 h3,
+    .phone-1 h3,
+    .Armsofa-1 h3 {
+        font-size: 16px;
     }
 
-    .sofa-1 p, .phone-1 p, .Armsofa-1 p {
-        font-size: 1.1rem;
+    .sofa-1 p,
+    .phone-1 p,
+    .Armsofa-1 p {
+        font-size: 17.6px;
     }
 
-    .plus, .plus-1 {
+    .plus,
+    .plus-1 {
         position: static;
         margin-top: 15px;
         display: inline-block;
@@ -369,7 +494,7 @@ footer ul li, footer ul p {
         width: 100%;
     }
 
-    .titles > div {
+    .titles>div {
         min-width: unset;
         margin-bottom: 20px;
         width: 100%;
@@ -380,8 +505,9 @@ footer ul li, footer ul p {
         transform: translateX(-50%);
     }
 
-    footer ul li, footer ul p {
-        font-size: 0.85rem;
+    footer ul li,
+    footer ul p {
+        font-size: 13.6px;
     }
 }
 
@@ -397,7 +523,7 @@ footer ul li, footer ul p {
     }
 
     header nav i {
-        font-size: 1rem;
+        font-size: 16px;
     }
 
     cards {
@@ -405,30 +531,45 @@ footer ul li, footer ul p {
         gap: 10px;
     }
 
-    .car, .pay, .shield, .headphones {
+    .car,
+    .pay,
+    .shield,
+    .headphones {
         padding: 25px 10px;
     }
 
-    .car h2, .pay h2, .shield h2, .headphones h2 {
-        font-size: 1.1rem;
+    .car h2,
+    .pay h2,
+    .shield h2,
+    .headphones h2 {
+        font-size: 17.6px;
     }
 
-    .car i, .pay i, .shield i, .headphones i {
-        font-size: 1.5rem;
+    .car i,
+    .pay i,
+    .shield i,
+    .headphones i {
+        font-size: 24px;
         padding: 12px;
     }
 
-    .container-1, .container-2, .container-3 {
+    .container-1,
+    .container-2,
+    .container-3 {
         margin: 0 10px;
         gap: 10px;
     }
 
-    .sofa-1 h3, .phone-1 h3, .Armsofa-1 h3 {
-        font-size: 0.95rem;
+    .sofa-1 h3,
+    .phone-1 h3,
+    .Armsofa-1 h3 {
+        font-size: 15.2px;
     }
 
-    .sofa-1 p, .phone-1 p, .Armsofa-1 p {
-        font-size: 1rem;
+    .sofa-1 p,
+    .phone-1 p,
+    .Armsofa-1 p {
+        font-size: 16px;
     }
 
     footer {
@@ -436,14 +577,14 @@ footer ul li, footer ul p {
     }
 
     .mart h2 {
-        font-size: 1.3rem;
+        font-size: 20.8px;
     }
 
     .mart .paragra {
-        font-size: 0.8rem;
+        font-size: 12.8px;
     }
 
     .sub-titles {
-        font-size: 1.1rem;
+        font-size: 17.6px;
     }
 }
